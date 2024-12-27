@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="effective solutions for your business" />
     <title>WebStudio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -46,7 +47,82 @@
             </li>
           </ul>
         </address>
+        <button class="burger-btn" type="button" data-menu-open>
+          <svg class="burger-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-solid_menu"></use>
+          </svg>
+        </button>
       </div>
+      <!-- #region mobile menu -->
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu-container">
+          <button class="mobile-close-btn" type="button" data-menu-close>
+            <svg class="close-icon-mob" width="8" height="8">
+              <use href="./images/icons.svg#icon-mobile-close"></use>
+            </svg>
+          </button>
+          <nav class="nav-mobile">
+            <ul class="list-mobile">
+              <li class="item-mobile">
+                <a href="./index.html" class="mobile-link blue">Studio</a>
+              </li>
+              <li class="item-mobile">
+                <a href="#" class="mobile-link">Portfolio</a>
+              </li>
+              <li class="item-mobile">
+                <a href="#" class="mobile-link">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <address class="mobile-contact">
+            <ul class="mobile-contact-list">
+              <li class="mobile-contact-item">
+                <a class="mobile-contact-link blue" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="mobile-contact-item">
+                <a class="mobile-contact-link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+          <div class="mobile-social">
+            <ul class="mobile-social-list">
+              <li class="mobile-social-item">
+                <a href="#" class="mobile-social-link">
+                  <svg class="mobile-social-list-icons" width="24" height="24">
+                    <use href="./images/icons.svg#instagram-2"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-social-item">
+                <a href="" class="mobile-social-link">
+                  <svg class="mobile-social-list-icons" width="24" height="24">
+                    <use href="./images/icons.svg#twitter-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-social-item">
+                <a href="" class="mobile-social-link">
+                  <svg class="mobile-social-list-icons" width="24" height="24">
+                    <use href="./images/icons.svg#facebook-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-social-item">
+                <a href="" class="mobile-social-link">
+                  <svg class="mobile-social-list-icons" width="24" height="24">
+                    <use href="./images/icons.svg#linkedin-1"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- #endregion mobile menu -->
     </header>
     <!-- #endregion header -->
 
@@ -76,8 +152,8 @@
                   <use href="./images/icons.svg#antenna-1"></use>
                 </svg>
               </div>
-              <h3 class="title-three title-three-feature">Strategy</h3>
-              <p class="block-text">
+              <h3 class="title-feature">Strategy</h3>
+              <p class="feature-text">
                 Our goal is to identify the business problem to walk away with
                 the perfect and creative solution.
               </p>
@@ -88,8 +164,8 @@
                   <use href="./images/icons.svg#clock-1"></use>
                 </svg>
               </div>
-              <h3 class="title-three title-three-feature">Punctuality</h3>
-              <p class="block-text">
+              <h3 class="title-feature">Punctuality</h3>
+              <p class="feature-text">
                 Bring the key message to the brand's audience for the best price
                 within the shortest possible time.
               </p>
@@ -100,8 +176,8 @@
                   <use href="./images/icons.svg#diagram-1"></use>
                 </svg>
               </div>
-              <h3 class="title-three title-three-feature">Diligence</h3>
-              <p class="block-text">
+              <h3 class="title-feature">Diligence</h3>
+              <p class="feature-text">
                 Research and confirm brands that present the strongest digital
                 growth opportunities and minimize risk.
               </p>
@@ -112,8 +188,8 @@
                   <use href="./images/icons.svg#astronaut-1"></use>
                 </svg>
               </div>
-              <h3 class="title-three title-three-feature">Technologies</h3>
-              <p class="block-text">
+              <h3 class="title-feature">Technologies</h3>
+              <p class="feature-text">
                 Design practice focused on digital experiences. We bring forth a
                 deep passion for problem-solving.
               </p>
@@ -126,10 +202,10 @@
       <!--#region team-->
       <section class="team">
         <div class="container team-container">
-          <h2 class="title-two team-title-two">Our Team</h2>
+          <h2 class="team-title">Our Team</h2>
           <ul class="team-list">
             <!--Mark Guerrero-->
-            <li class="img-block team-img-block">
+            <li class="team-img-block">
               <img
                 src="./images/our-team/mark.jpg"
                 alt="Mark Guerrero"
@@ -137,8 +213,8 @@
                 height="260"
               />
               <div class="team-card-content">
-                <h3 class="title-three team-title-three">Mark Guerrero</h3>
-                <p class="block-text">Product Designer</p>
+                <h3 class="card-team-title">Mark Guerrero</h3>
+                <p class="team-text">Product Designer</p>
                 <ul class="team-social-list">
                   <li class="team-social-item">
                     <a href="#" class="team-social-link">
@@ -188,7 +264,7 @@
               </div>
             </li>
             <!--Tom Ford-->
-            <li class="img-block team-img-block">
+            <li class="team-img-block">
               <img
                 src="./images/our-team/tom.jpg"
                 alt="Tom Ford"
@@ -196,8 +272,8 @@
                 height="260"
               />
               <div class="team-card-content">
-                <h3 class="title-three team-title-three">Tom Ford</h3>
-                <p class="block-text">Frontend Developer</p>
+                <h3 class="card-team-title">Tom Ford</h3>
+                <p class="team-text">Frontend Developer</p>
                 <ul class="team-social-list">
                   <li class="team-social-item">
                     <a href="#" class="team-social-link">
@@ -247,7 +323,7 @@
               </div>
             </li>
             <!--Camila Garcia-->
-            <li class="img-block team-img-block">
+            <li class="team-img-block">
               <img
                 src="./images/our-team/camila.jpg"
                 alt="Camila Garcia"
@@ -255,8 +331,8 @@
                 height="260"
               />
               <div class="team-card-content">
-                <h3 class="title-three team-title-three">Camila Garcia</h3>
-                <p class="block-text">Marketing</p>
+                <h3 class="card-team-title">Camila Garcia</h3>
+                <p class="team-text">Marketing</p>
                 <ul class="team-social-list">
                   <li class="team-social-item">
                     <a href="#" class="team-social-link">
@@ -306,7 +382,7 @@
               </div>
             </li>
             <!--Daniel Wilson-->
-            <li class="img-block team-img-block">
+            <li class="team-img-block">
               <img
                 src="./images/our-team/daniel.jpg"
                 alt="Daniel Wilson"
@@ -314,8 +390,8 @@
                 height="260"
               />
               <div class="team-card-content">
-                <h3 class="title-three team-title-three">Daniel Wilson</h3>
-                <p class="block-text">UI Designer</p>
+                <h3 class="card-team-title">Daniel Wilson</h3>
+                <p class="team-text">UI Designer</p>
                 <ul class="team-social-list">
                   <li class="team-social-item">
                     <a href="#" class="team-social-link">
@@ -372,10 +448,10 @@
       <!--#region portfolio-->
       <section class="portfolio">
         <div class="container portfolio-container">
-          <h2 class="portfolio-title-two">Our Portfolio</h2>
+          <h2 class="portfolio-title">Our Portfolio</h2>
           <ul class="portfolio-list">
             <!--Banking App-->
-            <li class="img-block portfolio-img-block">
+            <li class="portfolio-img-block">
               <div class="thumba">
                 <img
                   src="./images/our-portfolio/bank.jpg"
@@ -390,12 +466,12 @@
                 </p>
               </div>
               <div class="portfolio-card-content">
-                <h3 class="title-three portfolio-title-three">Banking App</h3>
-                <p class="block-text">App</p>
+                <h3 class="card-portfolio-title">Banking App</h3>
+                <p class="portfolio-text">App</p>
               </div>
             </li>
             <!--Cashless Payment-->
-            <li class="img-block portfolio-img-block">
+            <li class="portfolio-img-block">
               <div class="thumba">
                 <img
                   src="./images/our-portfolio/cash.jpg"
@@ -410,14 +486,12 @@
                 </p>
               </div>
               <div class="portfolio-card-content">
-                <h3 class="title-three portfolio-title-three">
-                  Cashless Payment
-                </h3>
-                <p class="block-text">Marketing</p>
+                <h3 class="card-portfolio-title">Cashless Payment</h3>
+                <p class="portfolio-text">Marketing</p>
               </div>
             </li>
             <!--Meditation App-->
-            <li class="img-block portfolio-img-block">
+            <li class="portfolio-img-block">
               <div class="thumba">
                 <img
                   src="./images/our-portfolio/meditation.jpg"
@@ -432,14 +506,12 @@
                 </p>
               </div>
               <div class="portfolio-card-content">
-                <h3 class="title-three portfolio-title-three">
-                  Meditation App
-                </h3>
-                <p class="block-text">App</p>
+                <h3 class="card-portfolio-title">Meditation App</h3>
+                <p class="portfolio-text">App</p>
               </div>
             </li>
             <!--Taxi Service-->
-            <li class="img-block portfolio-img-block">
+            <li class="portfolio-img-block">
               <div class="thumba">
                 <img
                   src="./images/our-portfolio/taxi.jpg"
@@ -454,12 +526,12 @@
                 </p>
               </div>
               <div class="portfolio-card-content">
-                <h3 class="title-three portfolio-title-three">Taxi Service</h3>
-                <p class="block-text">Marketing</p>
+                <h3 class="card-portfolio-title">Taxi Service</h3>
+                <p class="portfolio-text">Marketing</p>
               </div>
             </li>
             <!--Screen Illustrations-->
-            <li class="img-block portfolio-img-block">
+            <li class="portfolio-img-block">
               <div class="thumba">
                 <img
                   src="./images/our-portfolio/screen.jpg"
@@ -474,14 +546,12 @@
                 </p>
               </div>
               <div class="portfolio-card-content">
-                <h3 class="title-three portfolio-title-three">
-                  Screen Illustrations
-                </h3>
-                <p class="block-text">Design</p>
+                <h3 class="card-portfolio-title">Screen Illustrations</h3>
+                <p class="portfolio-text">Design</p>
               </div>
             </li>
             <!--Online Courses-->
-            <li class="img-block portfolio-img-block">
+            <li class="portfolio-img-block">
               <div class="thumba">
                 <img
                   src="./images/our-portfolio/online.jpg"
@@ -496,10 +566,8 @@
                 </p>
               </div>
               <div class="portfolio-card-content">
-                <h3 class="title-three portfolio-title-three">
-                  Online Courses
-                </h3>
-                <p class="block-text">Marketing</p>
+                <h3 class="card-portfolio-title">Online Courses</h3>
+                <p class="portfolio-text">Marketing</p>
               </div>
             </li>
           </ul>
@@ -511,10 +579,10 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-logo-text">
-          <a class="logo footer-logo" href="./index.html"
+          <a class="footer-logo" href="./index.html"
             >Web<span class="footer-logo-studio">Studio</span></a
           >
-          <p class="block-text">
+          <p class="footer-text">
             Increase the flow of customers and sales for your business with
             digital marketing & growth solutions.
           </p>
@@ -649,10 +717,12 @@
             />
             <label class="form-user-chekbox" for="user-privacy"
               ><span class="castom-chekbox"
-                ><svg class="castom-chekbox-icon" width="10" height="8">
+                ><svg class="castom-chekbox-icon" width="16" height="17">
                   <use href="./images/icons.svg#icon-check"></use></svg></span
-              >I accept the terms and conditions of the
-              <a class="checkbox-link" href="#">Privacy Policy</a></label
+              ><span>
+                I accept the terms and conditions of the
+                <a class="checkbox-link" href="#">Privacy Policy</a>
+              </span></label
             >
           </div>
           <button class="form-btn-submit" type="submit">Send</button>
@@ -662,5 +732,6 @@
     <!-- #endregion backdrop -->
 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
