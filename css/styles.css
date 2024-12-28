@@ -606,12 +606,7 @@ img {
     gap: 72px;
 }
 
-.team-img-block {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 32px;
+.team-img-block {    
     background: #fff;
     border-radius: 0 0 4px 4px;
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
@@ -653,8 +648,7 @@ img {
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    gap: 24px;
-    margin-bottom: 32px;
+    gap: 24px;    
 }
 
 .team-social-item {
@@ -837,6 +831,7 @@ footer .container {
         gap: 72px 24px;
         align-items: first baseline;
         padding-left: 108px;
+        /* width: 584px; */
     }
 }
 
